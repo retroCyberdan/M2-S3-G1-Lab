@@ -37,7 +37,7 @@ public class Lab5_1 : MonoBehaviour
         
     }
 
-    //Creo la fnzione 'IsEven'
+    //Creo la funzione 'IsEven'
     bool IsEven(int number)
     {
         if (number % 2 == 0)//controllo se il modulo del numero mi da zero
@@ -50,7 +50,7 @@ public class Lab5_1 : MonoBehaviour
         }
     }
 
-    //Creo la fnzione 'IsMultipleOf'
+    //Creo la funzione 'IsMultipleOf'
     bool IsMultipleOf(int basE, int multiple)
     {
         if (multiple % basE == 0)//controllo se il modulo di 'multiple' mi da zero

@@ -361,9 +361,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e0f8aeb493de2a4bb6fd4e8487ec173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numero: 7
-  numeroDiBase: 2
-  numeroMultiplo: 9
+  numero: 2
+  numeroDiBase: 14
+  numeroMultiplo: 28
 --- !u!4 &1207076842
 Transform:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public class Lab5_2 : MonoBehaviour
         Debug.Log("Ecco tutti i valori presenti nel tuo Array:");
         StampaArray(array);
         int minimo = TrovaMinimo(array);
-        Debug.Log("Di tutti i valori, questo è il più piccolo --> " + minimo);
+        Debug.Log("Di tutti i valori di questo Array, questo è il più piccolo --> " + minimo);
         int massimo = TrovaMassimo(array);
         Debug.Log("Questo, invece, è il valore più alto --> " + massimo);
     }
@@ -29,13 +29,13 @@ public class Lab5_2 : MonoBehaviour
         
     }
 
-    //Creo l funzione 'GeneraArray'
+    //Creo la funzione 'GeneraArray'
     int[] GeneraArray(int dimensione, int min, int max)
     {
         int[] array = new int[dimensione];
         for (int i = 0; i < array.Length; i++)
         {
-            array[i] = Random.Range(min, max + 1);
+            array[i] = Random.Range(min, max + 1);//min inclusivo, max esclusivo
         }
         return array;
     }
