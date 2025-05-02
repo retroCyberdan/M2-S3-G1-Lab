@@ -15,12 +15,14 @@ public class Lab5_3 : MonoBehaviour
         int[] array = GeneraArray(dimensioneArray, rangeMin, rangeMax);
         Debug.Log("Ecco tutti i valori presenti nel tuo Array:");
         StampaArray(array);
-        int minimo = TrovaMinimo(array);
-        int minimo2 = TrovaMinimo2(array);
-        Debug.Log("Di tutti i valori di questo Array, questi sono i 2 più piccoli --> " + minimo + " e " + minimo2);
-        int massimo = TrovaMassimo(array);
-        int massimo2 = TrovaMassimo2(array); 
-        Debug.Log("Questi, invece, sono i 2 valori più alti --> " + massimo + " e " + massimo2);
+        Debug.Log("Di tutti i valori di questo Array, questi sono i 2 più piccoli:");
+        //int minimo = TrovaMinimo(array);
+        //Debug.Log(minimo);
+        TrovaMinimi2(array);
+        Debug.Log("Questi, invece, sono i 2 valori più alti:");
+        //int massimo = TrovaMassimo(array);
+        //Debug.Log(massimo);
+        TrovaMassimi2(array);       
     }
 
     // Update is called once per frame
@@ -64,17 +66,19 @@ public class Lab5_3 : MonoBehaviour
     }
 
     //Creo la funzione 'TrovaMinimo2'
-    int TrovaMinimo2(int[] array)
+    void TrovaMinimi2(int[] array)
     {
         int minimo2 = array[0];
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 1; i < array.Length; i++)
         {
             if (array[i] < minimo2 && array[i] != TrovaMinimo(array))
             {
                 minimo2 = array[i];
             }
         }
-        return minimo2;
+        Debug.Log(TrovaMinimo(array));
+        Debug.Log(minimo2);
+        return;
 
 
     }
@@ -94,7 +98,7 @@ public class Lab5_3 : MonoBehaviour
     }
 
     //Creo la funzione 'TrovaMassimo2'
-    int TrovaMassimo2(int[] array)
+    void TrovaMassimi2(int[] array)
     {
         int massimo2 = array[0];
         for (int i = 1; i < array.Length; i++)
@@ -104,6 +108,8 @@ public class Lab5_3 : MonoBehaviour
                 massimo2 = array[i];
             }
         }
-        return massimo2;
+        Debug.Log(TrovaMassimo(array));
+        Debug.Log(massimo2);
+        return;
     }
 }
