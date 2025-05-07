@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b92d5f6c2de2274687498ae613c69a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dimensioneArray: 4
+  dimensioneArray: 5
   rangeMin: 2
   rangeMax: 10
 --- !u!4 &299208470
